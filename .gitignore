@@ -1,0 +1,4 @@
+Mask2Former/
+.venv/
+model_weights/*
+!model_weights/gitkeep
