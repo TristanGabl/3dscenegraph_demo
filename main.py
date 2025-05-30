@@ -44,7 +44,7 @@ def get_parser():
     return parser
 
 
-DEBUG = True
+DEBUG = False
 SAVE_OBJECTS = True
 FORCE_MASK2FORMER = False # if True, the mask2former model will be run even if the processed images already exist
 SAVE_VIZ = False
