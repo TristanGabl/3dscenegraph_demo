@@ -54,7 +54,7 @@ SKIP_FUSED_VOTES_VIZ = False # if True, generating frame_XXXXX_fused_votes.jpg w
 def main():
     args = get_parser().parse_args() # we first parse the args, see example use above
     # SceneGraph3D can be called as a class instance    
-    pipeline = SceneGraph3D(args, DEBUG, SAVE_VIZ, SAVE_OBJECTS, FORCE_MASK2FORMER, SKIP_PROJECTION_VIZ, SKIP_FUSED_VOTES_VIZ)
+    pipeline = SceneGraph3D(args, DEBUG, SAVE_OBJECTS, FORCE_MASK2FORMER, SKIP_PROJECTION_VIZ, SKIP_FUSED_VOTES_VIZ)
     pipeline.generate_3d_scene_graph() # this will run the whole pipeline and save the results in the output folder, additionally we have the result within the class instance
 
 

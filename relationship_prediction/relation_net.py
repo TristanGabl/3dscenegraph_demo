@@ -36,7 +36,7 @@ def load_model(model_path, device):
     Load the model from the specified path.
     """
     # Load the mappings for object names and labels
-    with open('dataset/mappings.pkl', 'rb') as f:
+    with open('relationship_prediction/mappings.pkl', 'rb') as f:
         mappings = pickle.load(f)
     
     # Load the model
