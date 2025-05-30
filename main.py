@@ -1,31 +1,7 @@
 import argparse
-import glob
 import multiprocessing as mp
 import os
-
-import pickle
-import trimesh
-import json
-
-import sys
-# sys.path.insert(1, os.path.join(sys.path[0], './Mask2Former'))
-# change working directory to this folder 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
-
-import cv2
-import numpy as np
-import tqdm
-import torch
-import matplotlib.pyplot as plt
-
-from detectron2.config import get_cfg
-from detectron2.data.detection_utils import read_image
-from detectron2.projects.deeplab import add_deeplab_config
-
-from detectron2.data import MetadataCatalog
-from detectron2.engine.defaults import DefaultPredictor
-from detectron2.utils.visualizer import ColorMode, Visualizer
 
 from scenegraph3d import SceneGraph3D
 

@@ -2,3 +2,6 @@ Mask2Former/
 .venv/
 model_weights/*
 !model_weights/gitkeep
+output/
+scans/*
+!scans/Untitled_Scan_20_18_44.zip

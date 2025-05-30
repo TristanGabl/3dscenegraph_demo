@@ -20,7 +20,7 @@ from detectron2.projects.deeplab import add_deeplab_config
 from detectron2.data import MetadataCatalog
 from detectron2.engine.defaults import DefaultPredictor
 from detectron2.utils.visualizer import ColorMode, Visualizer
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'helper_repos', 'Mask2Former')) 
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'Mask2Former')) 
 from mask2former import add_maskformer2_config
 
 from utils.scenegraph3d_objects import Objects
@@ -163,7 +163,7 @@ class SceneGraph3D:
         
         
         coco_name_to_name_simplified = json.load(open("label_mapping/coco_name_to_name_simplified.json", 'r'))
-        relation_net_model, name2idx, label2idx, idx2label = load_model("dataset/relation_model.pth", self.device)
+        relation_net_model, name2idx, label2idx, idx2label = load_model("relationship_prediction/relation_model.pth", self.device)
         self.edge_relationships = [["" for _ in range(len(self.objects))] for _ in range(len(self.objects))]
         for object1 in self.objects:
             for object2 in self.objects:
