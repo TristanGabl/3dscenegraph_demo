@@ -10,7 +10,7 @@ def get_parser():
     parser = argparse.ArgumentParser(description="3dscenegraph pipeline using mask2former")
     parser.add_argument(
         "--config-file",
-        default="helper_repos/Mask2Former/configs/coco/panoptic-segmentation/swin/maskformer2_swin_large_IN21k_384_bs16_100ep.yaml",
+        default="Mask2Former/configs/coco/panoptic-segmentation/swin/maskformer2_swin_large_IN21k_384_bs16_100ep.yaml",
         metavar="FILE",
         help="path to config file (default set in main.py)",
     )

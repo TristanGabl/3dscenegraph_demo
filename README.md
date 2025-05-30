@@ -6,7 +6,7 @@ This is a demo for to showcase the method for generating 3D scene graphs as desc
 # Setup and dependencies (tested on Ubuntu 22.04):
 1. Clone the repository.
 
-2. Create a venv (python 3.10.12) to install following dependencies in.
+2. Create a venv (python 3.10.12, pip 25.1.1) to install following dependencies in. Was tested on lighting.ai server with NVIDIA T4 GPU. 
 ```bash
 python -m venv .venv
 ```
@@ -20,7 +20,7 @@ pip install plyfile==1.1
 pip install open3d==0.19.0
 pip install seaborn==0.13.2
 ```
-5. Run through mask2former installation by stepping through mask2former_install_help.ipynb notebook. This can be a bit tricky without a nvidia gpu, please help yourself to other sources on installation issues.
+5. Run through mask2former installation by stepping through mask2former_install_help.ipynb notebook. This can be a bit tricky without a nvidia gpu, please help yourself to other sources on installation issues. Sometimes need to run "git clone https:/github.com/facebookresearch/Mask2Former.git" in terminal manually before.
 
 4. Download mask2former model (or different model of your choise from model Zoo).
 ```bash
